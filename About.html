@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Christian Piacentino Portfolio</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> <!-- Collegamento al font Oswald da Google Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Collegamento al CSS di Bootstrap per la struttura responsive e gli stili -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+   <!-- Navbar -->
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Barra di navigazione con classi di Bootstrap per il design scuro e responsivo -->
+    <a class="navbar-brand" href="index.html"> 
+        <img src="img/logo.png" alt="Logo"> 
+        CHRISTIAN PIACENTINO 
+    </a>
+
+    <!-- Hamburger menu per versione mobile -->
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle"> <!-- Input per attivare il menu a discesa su mobile -->
+    <label for="menu-toggle" class="menu-icon"> <!-- Etichetta per il menu a discesa con icona hamburger -->
+        <span></span> <!-- Linea superiore del menu hamburger -->
+        <span></span> <!-- Linea centrale del menu hamburger -->
+        <span></span> <!-- Linea inferiore del menu hamburger -->
+    </label>
+
+
+    <!-- Navbar links -->
+
+    <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> <!-- Link alla homepage -->
+
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li> <!-- Link alla pagina "About" -->
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contatti</a></li> <!-- Link alla pagina dei contatti -->
+
+        <li class="nav-item"><a class="nav-link" href="T_Ligny.html">Progetto 1</a></li> <!-- Link al progetto 1 -->
+
+        <li class="nav-item"><a class="nav-link" href="Amazon.html">Progetto 2</a></li> <!-- Link al progetto 2 -->
+
+        <li class="nav-item"><a class="nav-link" href="Vfx.html">Progetto 3</a></li> <!-- Link al progetto 3 -->
+    </ul>
+    </nav>
+
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs"> 
+        <div class="container">
+            <a href="index.html">Home</a> / <span>About</span> <!-- Collegamento alla homepage -->
+        </div>
+    </div>
+
+<main>
+    <section id="about" class="p-5" style="background-color: #1d1c1c;"> 
+        <div class="container">
+            <h2 class="text-warning">About</h2> 
+            <p class="text-light">
+                Nato a <span class="highlight">Trapani</span>, ho iniziato il mio percorso frequentando l'<strong>Istituto Tecnico Industriale Leonardo da Vinci</strong> sviluppando nozioni sulla programmazione, team working e problem solving.
+            </p>
+            <p class="text-light">
+                In seguito sto proseguendo i miei studi a <span class="highlight">Catania</span> presso l'<strong>Accademia di Belle Arti</strong> studiando <em>Nuove Tecnologie dell'Arte</em> specializzandomi in vari settori. Per questo mi sento di definirmi un <span class="highlight">Artista Multidisciplinare</span>.
+            </p>
+            <p class="text-light">
+                La mia passione abbraccia diverse forme d'arte, dalla <span class="highlight">Fotografia</span>, al <span class="highlight">Web Design</span>, fino all'<span class="highlight">UI/UX Design</span> e altro ancora.
+            </p>
+            <p class="text-light">
+                Attraverso la combinazione di queste discipline, cerco di catturare momenti unici, raccontare storie coinvolgenti e trasmettere emozioni vibranti.
+            </p>
+        </div>
+    </section>
+
+     <!-- Progetti -->
+     <section id="projects"> 
+        <div class="container">
+            <h2><span style="color: #ffffff;">My Projects</span></h2> 
+            <div class="card-columns"> <!-- Disposizione dei progetti in colonne -->
+
+                <!--Progetto Card 1 -->
+                <div class="card">
+                    <img src="img/T_ligny.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">"Torre di Ligny Memoria Sospesa nel Grigio del Tempo"</h5> 
+                        <p class="card-text">Uno scatto realizzato per il contest "In Ombra" con cui ho vinto il primo posto per la giuria</p> 
+                        <a href="T_Ligny.html" class="btn btn-primary">Vai al progetto</a> 
+                    </div>
+                </div>
+                <!-- Progetto Card 2 -->
+                <div class="card">
+                    <img src="img/Cover.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Prototipo annesso di Restyling dell'app Amazon</h5>
+                        <p class="card-text">Prototipo dell'app Amazon rivisitata e migliorata tramite studi di UI e UX design</p>
+                        <a href="Amazon.html" class="btn btn-primary">Vai al progetto</a>
+                    </div>
+                </div>
+                 <!-- Progetto Card 3 -->
+                 <div class="card">
+                    <img src="img/Hologram.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Hologram Watch</h5>
+                        <p class="card-text">Un lavoro di Visual Effects realizzato con After Effects, per realizzare un video ambientato nel futuro  con un ologramma </p>
+                        <a href="Vfx.html" class="btn btn-primary">Vai al progetto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <!-- Footer -->
+    <footer> 
+        <p>&copy; 2024 Christian Piacentino Portfolio. All Rights Reserved.</p> 
+    </footer>
+
+</body>
+</html>

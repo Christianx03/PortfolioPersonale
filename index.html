@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html lang="it"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Piacentino Portfolio</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> <!-- Collegamento al font Oswald da Google Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Collegamento al CSS di Bootstrap per la struttura responsive e gli stili -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+   <!-- Navbar -->
+    
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Barra di navigazione con classi di Bootstrap per il design scuro e responsivo -->
+    <a class="navbar-brand" href="index.html"> 
+        <img src="img/logo.png" alt="Logo"> 
+        CHRISTIAN PIACENTINO 
+    </a>
+
+    <!-- Hamburger menu per versione mobile -->
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle"> <!-- Input per attivare il menu a discesa su mobile -->
+    <label for="menu-toggle" class="menu-icon"> <!-- Etichetta per il menu a discesa con icona hamburger -->
+        <span></span> <!-- Linea superiore del menu hamburger -->
+        <span></span> <!-- Linea centrale del menu hamburger -->
+        <span></span> <!-- Linea inferiore del menu hamburger -->
+
+    </label>
+
+    <!-- Navbar links -->
+
+    <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a> <!-- Link alla homepage -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a> <!-- Link alla pagina "About" -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contatti</a> <!-- Link alla pagina dei contatti -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="T_Ligny.html">Progetto 1</a> <!-- Link al progetto 1 -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Amazon.html">Progetto 2</a> <!-- Link al progetto 2 -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Vfx.html">Progetto 3</a> <!-- Link al progetto 3 -->
+        </li>
+    </ul>
+    </nav>
+
+    <!-- Main -->
+<main>
+    <section id="home">
+
+        <video autoplay loop muted playsinline class="background-video"> <!-- Video di background-->
+            <source src="img/Clip3.mp4" type="video/mp4"> 
+            Il tuo browser non supporta il tag video. 
+        </video>
+
+        <h1>
+            <div class="background-blur"></div> <!-- Sfondo sfocato dietro il testo -->
+        <div class="text-background">
+            <h1>
+                CIAO. <br>
+                SONO <span style="color: #ffd60a;">CHRISTIAN PIACENTINO</span>, SONO UN <br>
+                MULTIDISCIPLINARY ARTIST, VI DO IL <br>
+                BENVENUTO NEL <span style="color: #ffd60a;">MIO PORTFOLIO</span>
+            </h1>
+        </div>
+    </section>
+  
+
+    <!-- Skills -->
+    <section id="skills" class="p-5" style="background-color: #1d1c1c;"> <!-- Sfondo scuro -->
+        <div class="container">
+            <h2>Le mie Skills</h2> 
+            <div class="row">
+               
+                <div class="col-md-12">
+                    <div class="skill-title">User Experience Design - UI/UX</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div> <!-- Barra di progresso che rappresenta il livello di competenza -->
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="skill-title">Web & User Interface Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="skill-title">Web Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="skill-title">Programming (HTML, CSS, JS)</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="skill-title">Adobe Programs</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progetti -->
+    <section id="projects"> 
+        <div class="container">
+            <h2><span style="color: #ffffff;">My Projects</span></h2> 
+            <div class="card-columns"> <!-- Disposizione dei progetti in colonne -->
+
+                <!--Progetto Card 1 -->
+                <div class="card">
+                    <img src="img/T_ligny.jpg" class="card-img-top" alt="Project 1"> <!-- Immagine del progetto -->
+                    <div class="card-body">
+                        <h5 class="card-title">"Torre di Ligny Memoria Sospesa nel Grigio del Tempo"</h5> <!-- Titolo del progetto -->
+                        <p class="card-text">Uno scatto realizzato per il contest "In Ombra" con cui ho vinto il primo posto per la giuria</p> <!-- Descrizione del progetto -->
+                        <a href="T_Ligny.html" class="btn btn-primary">Vai al progetto</a> <!-- Link per vedere il progetto -->
+                    </div>
+                </div>
+                <!-- Progetto Card 2 -->
+                <div class="card">
+                    <img src="img/Cover.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Prototipo annesso di Restyling dell'app Amazon</h5>
+                        <p class="card-text">Prototipo dell'app Amazon rivisitata e migliorata tramite studi di UI e UX design</p>
+                        <a href="Amazon.html" class="btn btn-primary">Vai al progetto</a>
+                    </div>
+                </div>
+                 <!-- Progetto Card 3 -->
+                 <div class="card">
+                    <img src="img/Hologram.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Hologram Watch</h5>
+                        <p class="card-text">Un lavoro di Visual Effects realizzato con After Effects, per realizzare un video ambientato nel futuro  con un ologramma </p>
+                        <a href="Vfx.html" class="btn btn-primary">Vai al progetto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <!-- Footer -->
+    <footer> 
+        <p>&copy; 2024 Christian Piacentino Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

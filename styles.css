@@ -1,0 +1,375 @@
+/* Media query per dispositivi con larghezza max 768px */
+@media only screen and (max-width: 768px) {
+    /* Centra il contenuto di una sezione chiamata Work */
+    .Work {
+        text-align: center; /* Allinea il testo al centro */
+    }
+
+    /* Stile della navbar su mobile */
+    .nav {
+        height: 50px !important; /* Altezza ridotta */
+        padding-top: 10px !important; /* Spaziatura superiore */
+    }
+
+    /* Altezza e spaziatura del footer */
+    .footer {
+        height: 50px !important;
+        padding-top: 10px !important;
+    }
+
+    /* Riduce il font dei titoli */
+    .titlename {
+        font-size: 16px !important;
+    }
+
+    /* Riduce la dimensione del logo */
+    .logo {
+        margin-left: 30px !important; /* Margine a sinistra */
+        width: 30px !important; /* Larghezza ridotta */
+    }
+
+    /* Stile per l'icona del menu */
+    .menu-icon {
+        margin-right: 30px !important; /* Sposta l'icona a destra */
+        display: flex !important; /* Mostra l'icona hamburger */
+    }
+
+    /* Stile del menu quando è visibile */
+    .navbar-nav {
+        display: none !important; /* Nasconde i link */
+        flex-direction: column !important; /* Dispone i link in verticale */
+        position: absolute !important; /* Posizione assoluta sotto la navbar */
+        top: 70px !important; /* Posizione dall'alto */
+        left: 0 !important; /* Allinea a sinistra */
+        right: 0 !important; /* Occupa tutta la larghezza */
+        background-color: #000814 !important; /* Sfondo scuro */
+        text-align: center !important; /* Centra il testo */
+    }
+
+    /* Quando il checkbox è attivo, mostra il menu */
+    .menu-toggle:checked + .menu-icon + .navbar-nav {
+        display: flex !important; /* Mostra i link */
+    }
+
+    /* Anima la prima barra dell'hamburger */
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px) !important; /* Rotazione */
+    }
+
+    /* Nasconde la seconda barra dell'hamburger */
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+        opacity: 0 !important; /* Rende la barra invisibile */
+    }
+
+    /* Anima la terza barra dell'hamburger */
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -10px) !important; /* Rotazione */
+    }
+}
+
+/* Nasconde il checkbox utilizzato per controllare il menu */
+.menu-toggle {
+    display: none; /* Rimuove il checkbox dalla vista */
+}
+
+/* Stile per l'icona "hamburger" del menu */
+.menu-icon {
+    display: none; /* Di default non viene mostrato */
+    flex-direction: column; /* Dispone le barre verticalmente */
+    cursor: pointer; /* Cambia il cursore per indicare che è cliccabile */
+}
+
+/* Barre dell'icona hamburger */
+.menu-icon span {
+    width: 30px; /* Larghezza di ogni barra */
+    height: 3px; /* Altezza di ogni barra */
+    background-color: #FFC300; /* Colore giallo */
+    margin: 5px 0; /* Spaziatura tra le barre */
+    transition: 0.3s; /* Animazione fluida durante le trasformazioni */
+}
+
+/* Stile base della navbar */
+.navbar {
+    z-index: 10; /* Imposta la priorità di rendering */
+    position: relative; /* Posizione relativa per controlli interni */
+    padding: 1rem; /* Spaziatura interna */
+    display: flex; /* Layout flessibile */
+    justify-content: space-between; /* Spazia gli elementi ai lati opposti */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
+}
+
+/* Logo del brand nella navbar */
+.navbar-brand img {
+    width: 60px; /* Dimensione della larghezza */
+    height: 60px; /* Dimensione dell'altezza */
+    border-radius: 50%; /* Rende il logo circolare */
+}
+
+/* Navbar links (di default visibili) */
+.navbar-nav {
+    display: flex; /* Dispone i link in fila */
+    justify-content: flex-end; /* Allinea i link a destra */
+}
+
+/* Stile per i singoli elementi del menu */
+.nav-item {
+    margin-left: 15px; /* Distanza tra un elemento e l'altro */
+}
+
+/* Stile per i link del menu */
+.nav-link {
+    color: #e2ad00; /* Colore giallo dei link */
+    font-size: 1.2rem; /* Dimensione del testo */
+    text-transform: uppercase; /* Testo in maiuscolo */
+    padding: 0.5rem 1rem; /* Spaziatura interna */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: color 0.3s ease; /* Animazione sul cambio colore */
+}
+
+/* Effetto hover sui link */
+.nav-link:hover {
+    color: #fff; /* Cambia il colore a bianco */
+}
+
+
+/* Stile base della pagina */
+body {
+    font-family: 'Oswald', sans-serif; /* Font personalizzato */
+}
+
+/* Dimensione dei titoli principali */
+h1 {
+    font-size: 40px; /* Titolo grande */
+}
+
+h2 {
+    font-size: 30px; /* Titolo medio */
+    color: #FFC300; /* Giallo */
+}
+
+
+
+/* Stile per la sezione Home */
+#home {
+    position: relative; /* Posizionamento per contenuti interni */
+    color: #ffffff; /* Testo bianco */
+    padding: 9rem 2rem; /* Spaziatura interna */
+    text-align: left; /* Testo allineato a sinistra */
+    display: flex; /* Layout flessibile */
+    align-items: center; /* Centra il contenuto verticalmente */
+    overflow: hidden; /* Nasconde contenuti che escono dal container */
+}
+
+/* Stile per il testo con sfondo */
+.text-background {
+    position: relative; /* Posizionamento relativo */
+    background-color: rgba(255, 255, 255, 0.5); /* Sfondo bianco trasparente */
+    z-index: 0; /* Priorità di rendering */
+    display: flex; /* Disposizione flessibile */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: center; /* Allinea orizzontalmente al centro */
+    border-radius: 25px; /* Angoli arrotondati */
+    padding-left: 10px; /* Spaziatura a sinistra */
+    padding-right: 10px; /* Spaziatura a destra */
+}
+
+/* Stile per un video di sfondo */
+.background-video {
+    position: absolute; /* Posizione assoluta per coprire tutto */
+    top: 0; /* Si allinea in alto */
+    left: 0; /* Si allinea a sinistra */
+    width: 100%; /* Occupa tutta la larghezza */
+    height: 100%; /* Occupa tutta l'altezza */
+    object-fit: cover; /* Adatta il video senza distorcerlo */
+    z-index: -1; /* Sfondo dietro gli altri elementi */
+}
+
+/* Testo principale */
+h1 {
+    position: relative; /* Posizionamento relativo per priorità */
+    z-index: 1; /* Sopra il video di sfondo */
+}
+
+/* Contenitore per le barre delle skill */
+.skill-bar {
+    width: 100%; /* Larghezza completa */
+    background-color: #ddd; /* Sfondo grigio chiaro */
+    border-radius: 5px; /* Angoli arrotondati */
+}
+
+/* Livello della skill all'interno della barra */
+.skill-level {
+    width: 0; /* Larghezza iniziale (animabile) */
+    height: 20px; /* Altezza della barra */
+    background-color: #FFC300; /* Colore giallo */
+    border-radius: 5px; /* Angoli arrotondati */
+}
+
+/* Titolo delle skill */
+.skill-title {
+    color: #ffffff; /* Colore bianco */
+    margin-bottom: 5px; /* Spaziatura inferiore */
+}
+
+/* Stile per la sezione progetti */
+#projects {
+    background-color: #3C64B9; /* Sfondo blu */
+    color: rgb(0, 0, 0); /* Testo nero */
+    padding: 5rem 1rem; /* Spaziatura interna */
+}
+
+/* Stile delle card dei progetti */
+.card {
+    margin-bottom: 1.5rem; /* Spaziatura inferiore */
+    background-color: #fff; /* Sfondo bianco */
+}
+
+/* Immagini delle card */
+.card-img-top {
+    width: 100%; /* Larghezza completa */
+    height: 200px; /* Altezza fissa */
+    object-fit: cover; /* Adatta le immagini senza distorcerle */
+}
+
+/* Stile del footer */
+footer {
+    background-color: #FFC300; /* Sfondo giallo */
+    color: #000; /* Testo nero */
+    padding: 1rem; /* Spaziatura interna */
+    text-align: center; /* Testo centrato */
+}
+
+
+
+/* Griglia dei progetti per schermi di almeno 768px */
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 2; /* Due colonne */
+    }
+}
+
+/* Griglia dei progetti per schermi di almeno 992px */
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3; /* Tre colonne */
+    }
+}
+
+
+
+/* Stile per la sezione "About" */
+#about {
+    color: #ffffff; /* Testo bianco */
+    padding: 4rem 1rem; /* Spaziatura interna */
+}
+
+/* Titoli della sezione "About" */
+#about h2 {
+    font-size: 2.5rem; /* Font grande */
+    color: #FFC300; /* Giallo */
+    text-align: center; /* Testo centrato */
+    margin-bottom: 1.5rem; /* Spaziatura inferiore */
+}
+
+/* Paragrafi nella sezione */
+#about p {
+    font-size: 1.1rem; /* Dimensione del testo */
+    line-height: 1.6; /* Altezza delle righe */
+    margin-bottom: 1rem; /* Spaziatura inferiore */
+}
+
+/* Evidenziazione speciale */
+.highlight {
+    color: #3C64B9; /* Testo blu */
+    font-weight: bold; /* Grassetto */
+}
+
+
+/* Sezione per il contenuto del progetto */
+#project-content {
+    color: #ffffff; /* Testo bianco */
+    padding: 4rem 1rem; /* Spaziatura interna */
+}
+
+/* Titoli nella sezione contenuto del progetto */
+#project-content h2 {
+    font-size: 2.5rem; /* Dimensione grande per i titoli */
+    color: #FFC300; /* Colore giallo */
+    text-align: left; /* Testo allineato a sinistra */
+    margin-bottom: 1.5rem; /* Spaziatura sotto il titolo */
+}
+
+/* Paragrafi e liste della sezione */
+#project-content p, #project-content ul {
+    font-size: 1.1rem; /* Dimensione del testo */
+    line-height: 1.6; /* Altezza delle righe */
+    margin-bottom: 1rem; /* Spaziatura inferiore */
+}
+
+/* Stile delle liste */
+#project-content ul {
+    list-style-type: disc; /* Punti elenco standard */
+    margin-left: 20px; /* Spaziatura a sinistra per indentazione */
+}
+
+/* Stile per le immagini nella sezione */
+#project-content img {
+    border-radius: 10px; /* Angoli arrotondati per le immagini */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera sotto l'immagine */
+}
+
+
+/* Sezione dedicata ai progetti */
+#projects {
+    background-color: #3C64B9; /* Sfondo blu */
+    color: #000; /* Testo nero */
+    padding: 5rem 1rem; /* Spaziatura interna */
+}
+
+
+
+/* Stile per il componente breadcrumbs */
+.breadcrumbs {
+    background-color: #e0e0e0; /* Grigio chiaro per lo sfondo */
+    padding: 10px 20px; /* Spaziatura interna */
+    font-size: 0.9rem; /* Dimensione del testo ridotta */
+    color: #333; /* Testo grigio scuro */
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+/* Contenitore dei breadcrumbs */
+.breadcrumbs .container {
+    max-width: 100%; /* Usa tutta la larghezza disponibile */
+    margin: 0; /* Rimuove margini esterni */
+    padding: 0; /* Rimuove spaziatura interna */
+}
+
+/* Stile per i link nei breadcrumbs */
+.breadcrumbs a {
+    color: #007bff; /* Colore blu per i link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    margin-right: 5px; /* Spaziatura a destra tra i link */
+}
+
+/* Effetto hover sui link dei breadcrumbs */
+.breadcrumbs a:hover {
+    text-decoration: underline; /* Aggiunge la sottolineatura */
+}
+
+/* Stile per l'elemento attivo nei breadcrumbs */
+.breadcrumbs span {
+    color: #555; /* Colore grigio scuro per il testo attivo */
+    font-weight: bold; /* Grassetto per enfasi */
+}
+
+/* Contenitore per i loghi */
+.logo-container {
+    display: flex; /* Dispone i loghi in una riga */
+    gap: 10px; /* Distanza tra i loghi */
+}
+
+/* Stile per le immagini dei loghi */
+.logo-container img {
+    width: 64px; /* Larghezza di ogni logo */
+    height: 64px; /* Altezza di ogni logo */
+}

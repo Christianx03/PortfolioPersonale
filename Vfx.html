@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="it"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contatti - Christian Piacentino Portfolio</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> <!-- Collegamento al font Oswald da Google Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Collegamento al CSS di Bootstrap per la struttura responsive e gli stili -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Barra di navigazione con classi di Bootstrap per il design scuro e responsivo -->
+        <a class="navbar-brand" href="index.html"> 
+            <img src="img/logo.png" alt="Logo"> 
+            CHRISTIAN PIACENTINO 
+        </a>
+    
+        <!-- Hamburger menu per versione mobile -->
+    
+        <input type="checkbox" id="menu-toggle" class="menu-toggle"> <!-- Input per attivare il menu a discesa su mobile -->
+        <label for="menu-toggle" class="menu-icon"> <!-- Etichetta per il menu a discesa con icona hamburger -->
+            <span></span> <!-- Linea superiore del menu hamburger -->
+            <span></span> <!-- Linea centrale del menu hamburger -->
+            <span></span> <!-- Linea inferiore del menu hamburger -->
+        </label>
+    
+    
+        <!-- Navbar links -->
+    
+        <ul class="navbar-nav ml-auto"> 
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> <!-- Link alla homepage -->
+    
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li> <!-- Link alla pagina "About" -->
+    
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contatti</a></li> <!-- Link alla pagina dei contatti -->
+    
+            <li class="nav-item"><a class="nav-link" href="T_Ligny.html">Progetto 1</a></li> <!-- Link al progetto 1 -->
+    
+            <li class="nav-item"><a class="nav-link" href="Amazon.html">Progetto 2</a></li> <!-- Link al progetto 2 -->
+    
+            <li class="nav-item"><a class="nav-link" href="Vfx.html">Progetto 3</a></li> <!-- Link al progetto 3 -->
+        </ul>
+        </nav>
+    
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs"> 
+        <div class="container">
+            <a href="index.html">Home</a> / <span>Hologram Watch </span> <!-- Collegamento alla homepage e testo che indica il progetto corrente -->
+        </div>
+    </div>
+
+ <main>
+   <section id="project-content" class="p-5" style="background-color: #1d1c1c;"> 
+       <div class="container text-light"> 
+           <h2 class="text-warning">"Hologram Watch"</h2> 
+           
+           <p>Progetto di Video Editing e Compositing.</p> 
+           <p>L'obiettivo era utilizzare le nozioni apprese sul programma Adobe After Effects, un video ambientato in un futuro tra 25/50 anni.</p> 
+           <p>Ho diviso il lavoro in 3 fasi principali:</p> 
+           <ul>
+               <li>Registrazione video senza effetti</li>
+               <li>Raccolta degli effetti speciali da applicare</li>
+               <li>Applicazione degli effetti e color grading</li>
+           </ul>
+
+           <!-- Imaggini Progetto-->
+           <div class="row mt-4"> <!-- Righe di immagini per visualizzare i passi del progetto -->
+               <div class="col-md-6">
+                   <img src="img/Vfx_step1.jpg" class="img-fluid mb-3" alt="Registrazione video senza effetti"> <!-- Prima fase del progetto -->
+               </div>
+               <div class="col-md-6">
+                   <img src="img/Vfx_step2.jpg" class="img-fluid mb-3" alt="Raccolta effetti speciali"> <!-- Seconda fase del progetto -->
+               </div>
+               <div class="col-md-12">
+                   <img src="img/Vfx_step3.jpg" class="img-fluid mb-3" alt="Applicazione effetti e color grading"> <!-- Terza fase del progetto -->
+               </div>
+           </div>
+       </div>
+   </section>
+
+         <!-- Progetti -->
+         <section id="projects"> 
+            <div class="container">
+                <h2><span style="color: #ffffff;">My Projects</span></h2> 
+                <div class="card-columns"> <!-- Disposizione dei progetti in colonne -->
+                <!-- Progetto Card 1 -->
+                    <div class="card">
+                        <img src="img/T_ligny.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">"Torre di Ligny Memoria Sospesa nel Grigio del Tempo"</h5>
+                            <p class="card-text">Uno scatto realizzato per il contest "In Ombra" con cui ho vinto il primo posto per la giuria</p> 
+                            <a href="T_Ligny.html" class="btn btn-primary">Vai al progetto</a> 
+                        </div>
+                    </div>
+
+                    <!-- Progetto Card 2 -->
+                    <div class="card">
+                        <img src="img/Cover.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Prototipo annesso di Restyling dell'app Amazon</h5>
+                            <p class="card-text">Prototipo dell'app Amazon rivisitata e migliorata tramite studi di UI e UX design</p>
+                            <a href="Amazon.html" class="btn btn-primary">Vai al progetto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>   
+   <!-- Footer -->
+   <footer> <!-- Sezione del piè di pagina -->
+       <p>&copy; 2024 Christian Piacentino Portfolio. All Rights Reserved.</p> <!-- Copyright del sito -->
+   </footer>
+
+</body>
+</html>
